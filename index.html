@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny Wise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Penny Wise</h1>
+        <h2>Track. Save. Thrive.</h2>
+
+   <!-- Income Input -->
+    <div id="income-section">
+        <h2>Income</h2>
+        <input type="number" id="income-input" placeholder="Enter your income">
+        <!-- Currency Selector -->
+    <div id="currency-selector">
+      <label for="currency">Select Currency:</label>
+      <select id="currency">
+        <option value="INR" selected>Indian Rupee (₹)</option>
+        <option value="USD">Dollars ($)</option>
+        <option value="EUR">Euro (€)</option>
+      </select>
+    </div>
+
+        <button id="add-income">Add Income</button>
+        <ul id="income-list"></ul> <!-- Income records -->
+  </div>
+
+    
+<!-- Expense Input -->
+<div id="expense-section">
+    <h2>Expenses</h2>
+    <input type="text" id="reason-input" placeholder="Enter reason">
+    <input type="number" id="expense-input" placeholder="Enter your expense">
+    <input type="date" id="date-input"> <!-- Date input -->
+    <button id="add-expense">Add Expense</button>
+    <ul id="expense-list"></ul> <!-- Expense records -->
+  </div>
+  
+
+    <!-- Budget and Savings Goals -->
+    <div id="goal-section">
+        <h2>Savings Goal</h2>
+        <input type="number" id="goal-input" placeholder="Enter your savings goal">
+        <button id="set-goal">Set Goal</button>
+        <div id="goal-status"></div>
+      </div>
+
+    <!-- Chart for Data Visualization -->
+    <div id="chart-section">
+        <h2>Spending Patterns</h2>
+        <canvas id="myChart"></canvas>
+      </div>
+
+    <!-- Clear Data Section -->
+  <div id="clear-data-section">
+    <button id="clear-data">Clear All Saved Data</button>
+  </div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
