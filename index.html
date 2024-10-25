@@ -9,11 +9,22 @@
 <body>
     <div class="container">
         <h1>Penny Wise</h1>
-        <h2>Track. Save. Thrive.</h2>
+        <h2>Track. Save. Thrive.</h2>      
+
+    </body>
+
+    <style>
+      body {
+        background-image: url("./images/Group\ 48096308.png"); /* Use relative path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
 
    <!-- Income Input -->
     <div id="income-section">
-        <h2>Income</h2>
+        <h3>Income</h3>
         <input type="number" id="income-input" placeholder="Enter your income">
         <!-- Currency Selector -->
     <div id="currency-selector">
@@ -32,7 +43,7 @@
     
 <!-- Expense Input -->
 <div id="expense-section">
-    <h2>Expenses</h2>
+    <h3>Expenses</h3>
     <input type="text" id="reason-input" placeholder="Enter reason">
     <input type="number" id="expense-input" placeholder="Enter your expense">
     <input type="date" id="date-input"> <!-- Date input -->
@@ -43,7 +54,7 @@
 
     <!-- Budget and Savings Goals -->
     <div id="goal-section">
-        <h2>Savings Goal</h2>
+        <h3>Savings Goal</h3>
         <input type="number" id="goal-input" placeholder="Enter your savings goal">
         <button id="set-goal">Set Goal</button>
         <div id="goal-status"></div>
@@ -51,7 +62,7 @@
 
     <!-- Chart for Data Visualization -->
     <div id="chart-section">
-        <h2>Spending Patterns</h2>
+        <h3>Spending Patterns</h3>
         <canvas id="myChart"></canvas>
       </div>
 
